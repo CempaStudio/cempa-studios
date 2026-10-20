@@ -1,4 +1,4 @@
-/* CEMPA STUDIOS — Wireframe + modo oscuro con transición */
+/* CEMPA STUDIOS â€” Wireframe + modo oscuro con transiciÃ³n */
 
 :root {
   --black: #1a1a1a;
@@ -132,7 +132,7 @@ h1, h2, h3 {
 }
 
 .logo-img {
-  height: 70px;      /* ajusta el tamaño */
+  height: 70px;      /* ajusta el tamaÃ±o */
   width: auto;
   display: block;
 }
@@ -170,7 +170,7 @@ h1, h2, h3 {
 .menu-toggle.active span:nth-child(2) { opacity: 0; }
 .menu-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Botón tema */
+/* BotÃ³n tema */
 .btn-theme {
   width: 38px;
   height: 38px;
@@ -1194,14 +1194,14 @@ body.dark-mode .nav {
     padding: 16px 20px;
   }
 }
-/* En móvil, un poco más pequeño si quieres */
+/* En mÃ³vil, un poco mÃ¡s pequeÃ±o si quieres */
 @media (max-width: 768px) {
   .logo-img {
     height: 28px;
   }
 }
 
-/* Ajuste técnico: imagen principal del estudio */
+/* Ajuste tÃ©cnico: imagen principal del estudio */
 .hero-logo { display:block; width:min(100%, 520px); height:auto; object-fit:contain; margin:1.25rem 0; }
 
 
@@ -1217,7 +1217,7 @@ body.dark-mode .nav {
 /* El desplazamiento a secciones no queda oculto debajo del encabezado. */
 [id]:target { scroll-margin-top: calc(var(--header-h) + 16px); }
 
-/* Foco visible para usuarios de teclado, también sobre fondos oscuros. */
+/* Foco visible para usuarios de teclado, tambiÃ©n sobre fondos oscuros. */
 :where(a, button, [role="button"]):focus-visible {
   outline: 3px solid var(--focus-color);
   outline-offset: 4px;
@@ -1227,7 +1227,7 @@ body.dark-mode .nav {
   outline-color: #ffe44b;
 }
 
-/* Navegación con subrayado animado pero sin saltos de composición. */
+/* NavegaciÃ³n con subrayado animado pero sin saltos de composiciÃ³n. */
 .nav a, .footer-nav a { position: relative; }
 .nav a::after, .footer-nav a::after {
   content: ''; position: absolute; left: 0; right: 0; bottom: -5px;
@@ -1238,7 +1238,7 @@ body.dark-mode .nav {
 .nav a:hover::after, .nav a:focus-visible::after,
 .footer-nav a:hover::after, .footer-nav a:focus-visible::after { transform: scaleX(1); }
 
-/* Botones: respuesta suave, respetando la interacción táctil. */
+/* Botones: respuesta suave, respetando la interacciÃ³n tÃ¡ctil. */
 .btn, .btn-yellow {
   transition: transform var(--motion-normal) var(--motion-ease),
     box-shadow var(--motion-normal) ease,
@@ -1274,7 +1274,7 @@ body.dark-mode .nav {
   display: inline-block; transition: transform var(--motion-normal) var(--motion-ease);
 }
 
-/* Galería ampliada, con entrada ligera y miniaturas legibles. */
+/* GalerÃ­a ampliada, con entrada ligera y miniaturas legibles. */
 .project-view:not([hidden]) .project-view-body {
   animation: cempa-view-enter 320ms var(--motion-ease) both;
 }
@@ -1295,7 +1295,7 @@ body.dark-mode .nav {
 }
 .enhanced-motion .reveal-item.is-visible { opacity: 1; transform: none; }
 
-/* Móvil: navegación más fluida con transform en vez de alterar 'right'. */
+/* MÃ³vil: navegaciÃ³n mÃ¡s fluida con transform en vez de alterar 'right'. */
 @media (max-width: 768px) {
   .nav { right: 0; transform: translateX(105%);
     transition: transform 320ms var(--motion-ease), background-color var(--ease);
@@ -1313,7 +1313,7 @@ body.dark-mode .nav {
 }
 
 
-/* CEMPA 03 | Evolución de identidad sobre la misma estructura */
+/* CEMPA 03 | EvoluciÃ³n de identidad sobre la misma estructura */
 :root {
  --font: 'Space Grotesk', system-ui, sans-serif;
  --font-display: 'Bricolage Grotesque', 'Space Grotesk', sans-serif;
@@ -1421,8 +1421,8 @@ body.dark-mode .nav a.is-active {
 }
 
 
-/* CEMPA 05: transición del tema sincronizada con la navegación y secciones.
-   Se animan colores de fondo, no gradientes ni propiedades de disposición. */
+/* CEMPA 05: transiciÃ³n del tema sincronizada con la navegaciÃ³n y secciones.
+   Se animan colores de fondo, no gradientes ni propiedades de disposiciÃ³n. */
 :root { --theme-duration: 480ms; --theme-easing: ease-in-out; }
 body, .header, .nav, .hero-left, .hero-right,
 .nosotros, .servicios, .portafolio, .cta, .footer,
@@ -1432,7 +1432,7 @@ body, .header, .nav, .hero-left, .hero-right,
   transition-duration: var(--theme-duration);
   transition-timing-function: var(--theme-easing);
 }
-/* Los indicadores activos siguen respondiendo rápidamente al cursor. */
+/* Los indicadores activos siguen respondiendo rÃ¡pidamente al cursor. */
 .nav a {
   transition: color 280ms ease, background-color 280ms ease,
               transform 280ms ease, box-shadow 280ms ease;
@@ -1475,7 +1475,7 @@ body.dark-mode .lang-btn.is-current { color:#1a102d; background:#f6e933; }
 .footer-credit {font-family:'Space Grotesk',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.16em; font-weight:700; opacity:.72; }
 .footer-signature .footer-brand { display:block; }
 .footer-signature .footer-brand img { display:block; }
-/* Formas gráficas sutiles inspiradas en el logo; nunca bloquean interacciones */
+/* Formas grÃ¡ficas sutiles inspiradas en el logo; nunca bloquean interacciones */
 .section.nosotros,.section.servicios,.section.portafolio,.section.cta,.footer { position:relative; isolation:isolate; overflow:hidden; }
 .section-confetti { position:absolute; inset:0; pointer-events:none; z-index:-1; overflow:hidden; opacity:.72; }
 .section-confetti span { position:absolute; display:block; width:25px; height:25px; clip-path:polygon(50% 0,100% 100%,0 100%); }
@@ -1491,7 +1491,7 @@ body.dark-mode .lang-btn.is-current { color:#1a102d; background:#f6e933; }
 @media(prefers-reduced-motion:reduce){.lang-btn{transition:none!important}}
 
 
-/* CEMPA 07 — navegación integrada al header y geometría ambiental */
+/* CEMPA 07 â€” navegaciÃ³n integrada al header y geometrÃ­a ambiental */
 /* En escritorio el nav nunca necesita un fondo separado: el fondo es del header. */
 @media (min-width: 769px) {
   .header .nav,
@@ -1504,12 +1504,12 @@ body.dark-mode .lang-btn.is-current { color:#1a102d; background:#f6e933; }
 /* El cambio de tema afecta solo a la cabecera, no a una caja gris adicional. */
 .header .nav { border: 0; }
 .header .nav ul { background: transparent; }
-/* Menú móvil: conservamos un fondo sólido para que sea legible al abrirlo. */
+/* MenÃº mÃ³vil: conservamos un fondo sÃ³lido para que sea legible al abrirlo. */
 @media (max-width: 768px) {
   .header .nav { background-color: #fff; }
   body.dark-mode .header .nav { background-color: #121212; }
 }
-/* Figuras menos invasivas, repartidas también hacia el centro del contenido. */
+/* Figuras menos invasivas, repartidas tambiÃ©n hacia el centro del contenido. */
 .section-confetti { opacity: .34; }
 .section-confetti span { opacity: .72; }
 .section-confetti span:nth-child(7) {
@@ -1528,7 +1528,7 @@ body.dark-mode .lang-btn.is-current { color:#1a102d; background:#f6e933; }
   top: 81%; left: 27%; width: 21px; height: 24px;
   background: #eecf24; transform: rotate(140deg);
 }
-/* Ninguna forma decorativa en el pie de página. */
+/* Ninguna forma decorativa en el pie de pÃ¡gina. */
 .footer .section-confetti { display: none !important; }
 @media (max-width: 768px) {
   .section-confetti { opacity: .23; }
@@ -1585,7 +1585,7 @@ body.dark-mode .lang-btn.is-current { color:#1a102d; background:#f6e933; }
 /* v11.4: funcionalidades documentadas en el proyecto editorial */
 .pv-feature-list{list-style:disc;padding-left:1.2rem;display:grid;gap:.48rem;margin:.75rem 0 1rem;line-height:1.5}.pv-feature-list li{font-size:.93rem;color:inherit}.pv-feature-note{font-size:.84rem;opacity:.72;line-height:1.5}#pv-features-block[hidden]{display:none!important}
 
-/* V11.6: logotipo más legible en la vista de proyectos. */
+/* V11.6: logotipo mÃ¡s legible en la vista de proyectos. */
 .project-view-top .pv-brand { width: clamp(190px, 21vw, 270px); max-height: 90px; height: auto; object-fit: contain; }
 @media (max-width: 600px) { .project-view-top .pv-brand { width: clamp(125px, 36vw, 180px); max-height: 65px; } }
 
@@ -1598,3 +1598,55 @@ body.dark-mode .lang-btn.is-current { color:#1a102d; background:#f6e933; }
 @media(max-width:460px){.pv-actions{flex-direction:column}.pv-actions a{width:100%;text-align:center}}
 
 .pv-project-note{font-size:.9rem;color:rgba(255,255,255,.75);line-height:1.65;max-width:60ch;margin-top:14px}.pv-project-note[hidden],.demo-disclaimer[hidden]{display:none!important}
+
+/* CEMPA v11.9: fichas de proyectos en telÃ©fonos, navegaciÃ³n exclusivamente vertical. */
+@media (max-width: 900px) {
+  .project-view {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    overflow-y: auto;
+    overscroll-behavior-x: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .project-view-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
+    gap: clamp(20px, 5vw, 32px);
+    padding: 12px clamp(16px, 4vw, 26px) 44px;
+  }
+  .project-view-gallery,
+  .project-view-info,
+  .pv-main-img,
+  .pv-gallery-note,
+  .pv-block,
+  .pv-row { min-width: 0; width: 100%; max-width: 100%; }
+  .project-view-info { justify-content: flex-start; }
+  .pv-main-img { aspect-ratio: auto; min-height: 0; }
+  .pv-main-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: min(68vh, 600px);
+    object-fit: contain;
+  }
+  .pv-thumbs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+    gap: 8px;
+    overflow: visible;
+    width: 100%;
+  }
+  .pv-thumbs button { width: 100%; height: 56px; min-width: 0; }
+  .pv-gallery-note { overflow-wrap: anywhere; }
+}
+@media (max-width: 600px) {
+  .project-view-top { padding: 15px 16px; }
+  .pv-nav { gap: 8px; }
+  .project-view-info h1 { overflow-wrap: anywhere; }
+  .pv-row { grid-template-columns: minmax(0, 1fr); }
+  .pv-actions { flex-direction: column; }
+  .pv-actions a { width: 100%; max-width: 100%; }
+}
